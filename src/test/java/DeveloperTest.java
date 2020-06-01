@@ -40,4 +40,10 @@ public class DeveloperTest {
         assertEquals(101000.00, developer.getSalary(), 0.01);
     }
 
+    @Test
+    public void canNotRaiseTheSalary__negative() {
+        developer.raiseSalary(-1000.00);
+        assertEquals(100000.00, developer.getSalary(), 0.01);
+    }
+
 }
