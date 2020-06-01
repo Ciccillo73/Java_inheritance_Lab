@@ -11,12 +11,12 @@ public class DatabaseAdminTest {
 
     @Before
     public void setUp() {
-        databaseAdmin = new DatabaseAdmin("Fra", "zzz123", 100000.00 );
+        databaseAdmin = new DatabaseAdmin("Fra", "zzz123", 100000.00);
     }
 
     @Test
     public void canGetName() {
-        assertEquals("Fra", databaseAdmin.getName() );
+        assertEquals("Fra", databaseAdmin.getName());
     }
 
     @Test
@@ -47,13 +47,13 @@ public class DatabaseAdminTest {
     }
 
     @Test
-    public void canNotHaveNullString(){
+    public void canNotHaveNullString() {
         databaseAdmin.setName("");
         assertEquals("Fra", databaseAdmin.getName());
     }
 
     @Test
-    public void weCanSetName(){
+    public void weCanSetName() {
         databaseAdmin.setName("John");
         assertEquals("John", databaseAdmin.getName());
     }

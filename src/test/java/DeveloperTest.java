@@ -11,12 +11,12 @@ public class DeveloperTest {
 
     @Before
     public void setUp() {
-        developer = new Developer("Fra", "zzz123", 100000.00 );
+        developer = new Developer("Fra", "zzz123", 100000.00);
     }
 
     @Test
     public void canGetName() {
-        assertEquals("Fra", developer.getName() );
+        assertEquals("Fra", developer.getName());
     }
 
     @Test
@@ -47,13 +47,13 @@ public class DeveloperTest {
     }
 
     @Test
-    public void canNotHaveNullString(){
+    public void canNotHaveNullString() {
         developer.setName("");
         assertEquals("Fra", developer.getName());
     }
 
     @Test
-    public void weCanSetName(){
+    public void weCanSetName() {
         developer.setName("John");
         assertEquals("John", developer.getName());
     }
