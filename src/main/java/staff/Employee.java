@@ -29,11 +29,14 @@ public abstract class Employee {
     }
 
     public void raiseSalary(double raiseAmount) {
-        this.setSalary(( this.getSalary() + raiseAmount));
+        if(raiseAmount > 0.00) {
+            this.setSalary((this.getSalary() + raiseAmount));
+        }
     }
 
     public double payBonus(){
         return ((this.getSalary() *1)/100);
     }
+
 
 }
