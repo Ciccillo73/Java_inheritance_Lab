@@ -46,4 +46,16 @@ public class DatabaseAdminTest {
         assertEquals(100000.00, databaseAdmin.getSalary(), 0.01);
     }
 
+    @Test
+    public void canNotHaveNullString(){
+        databaseAdmin.setName("");
+        assertEquals("Fra", databaseAdmin.getName());
+    }
+
+    @Test
+    public void weCanSetName(){
+        databaseAdmin.setName("John");
+        assertEquals("John", databaseAdmin.getName());
+    }
+
 }

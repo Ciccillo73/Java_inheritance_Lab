@@ -46,4 +46,16 @@ public class DeveloperTest {
         assertEquals(100000.00, developer.getSalary(), 0.01);
     }
 
+    @Test
+    public void canNotHaveNullString(){
+        developer.setName("");
+        assertEquals("Fra", developer.getName());
+    }
+
+    @Test
+    public void weCanSetName(){
+        developer.setName("John");
+        assertEquals("John", developer.getName());
+    }
+
 }
