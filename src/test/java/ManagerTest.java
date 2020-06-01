@@ -53,4 +53,10 @@ public class ManagerTest {
         manager.setName("");
         assertEquals("Francesco", manager.getName());
     }
+
+    @Test
+    public void weCanSetName(){
+        manager.setName("John");
+        assertEquals("John", manager.getName());
+    }
 }
